@@ -25,7 +25,7 @@ class ButtontablePlugin extends Plugin
     public function onPluginsInitialized()
     {
         if ($this->isAdmin()) {
-            $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/buttontest/admin/js/button.js');
+            $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/buttontable/admin/js/button.js');
         }
     }
 }
