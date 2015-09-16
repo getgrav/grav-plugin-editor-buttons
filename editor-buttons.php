@@ -26,7 +26,8 @@ class EditorButtonsPlugin extends Plugin
     {
         if ($this->isAdmin()) {
             if ($this->config->get('plugins.editor-buttons.insert_table')) {
-                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/js/button.js');
+                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-table/js/button.js');
+                $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-table/css/button.css');
             }
 
         }

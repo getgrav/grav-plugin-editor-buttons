@@ -1,0 +1,39 @@
+#grid-chooser {
+  width: 120px;
+  height: 120px;
+  background: lightgray;
+  position: absolute;
+  padding: 2px;
+  display: block;
+  z-index: 100;
+}
+
+#grid-chooser .row:first-child .square:first-child .inner {
+  background: rgba(0,0,0,0.4);
+}
+
+#grid-chooser .square:first-child {
+  margin-top: 0;
+}
+
+#grid-chooser .row {
+  height: calc(100%/5);
+}
+#grid-chooser .square {
+  height: 100%;
+  width: calc(100%/5);
+
+  display: inline-block;
+  margin: -2px 0;
+  padding: 1px;
+}
+#grid-chooser .square:hover .inner, #grid-chooser .square.highlight .inner {
+  background: rgba(0,0,0,0.4)
+}
+
+#grid-chooser .inner {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.2);
+}
