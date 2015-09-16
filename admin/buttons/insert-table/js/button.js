@@ -52,30 +52,30 @@
                 var j = 0;
 
                 while (i < cols) {
-                    text += '|  Column ' + (i + 1) + ' Title ';
+                    text += '|  Column ' + (i + 1) + ' Title  ';
                     i++;
                 }
 
-                text +=  ' |' + '\n';
+                text +=  '|' + '\n';
 
                 i = 0;
                 while (i < cols) {
-                    text += '|  :----- ';
+                    text += '|  :-----          ';
                     i++;
                 }
 
-                text +=  ' |' + '\n';
+                text +=  '|' + '\n';
 
                 i = 0;
                 while (i < rows) {
                     j = 0;
                     while (j < cols) {
-                        text += '|  Column ' + (j + 1) + ' Item ' + (i + 1);
+                        text += '|  Column ' + (j + 1) + ' Item ' + (i + 1) + ' ';
                         j++;
                     }
                     i++;
 
-                    text +=  ' |' + '\n';
+                    text +=  '|' + '\n';
                 }
 
                 //Add text to the editor
