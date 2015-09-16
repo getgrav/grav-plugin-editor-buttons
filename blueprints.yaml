@@ -1,0 +1,47 @@
+name: Editor Buttons
+version: 1.0.0
+description: Adds additional editor button options
+icon: edit
+author:
+  name: Team Grav
+  email: devs@getgrav.org
+  url: http://getgrav.org
+homepage: https://github.com/getgrav/grav-plugin-editor-buttons
+keywords: admin, plugin, editor, buttons
+bugs: https://github.com/getgrav/grav-plugin-editor-buttons/issues
+license: MIT
+
+dependencies:
+  - admin
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    buttons:
+      type: section
+      title: Enable buttons
+      underline: true
+
+      fields:
+
+        insert_table:
+          type: toggle
+          label: Insert Table Button
+          highlight: 1
+          default: 0
+          options:
+            1: Enabled
+            0: Disabled
+          validate:
+            type: bool

@@ -12,9 +12,9 @@
                 pos     = cm.getDoc().getCursor(true),
                 posend  = cm.getDoc().getCursor(false);
 
-            var text =  '|  One | Two |' + '\n' +
-                        '| :--- | :--- |' + '\n' +
-                        '| 1 | 2 |';
+            var text =  '|  Column One Title | Column Two Title |' + '\n' +
+                        '| :-----            | :-----           |' + '\n' +
+                        '| Column 1 Item 1   | Column 2 Item 1  |';
 
             for (var i=pos.line; i<(posend.line+1);i++) {
                 cm.replaceRange(text+cm.getLine(i), { line: i, ch: 0 }, { line: i, ch: cm.getLine(i).length });

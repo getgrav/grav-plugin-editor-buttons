@@ -7,7 +7,7 @@ use Grav\Common\Page\Page;
 use Grav\Common\Page\Pages;
 use Grav\Common\Plugin;
 
-class ButtontablePlugin extends Plugin
+class EditorButtonsPlugin extends Plugin
 {
     /**
      * @return array
@@ -25,7 +25,10 @@ class ButtontablePlugin extends Plugin
     public function onPluginsInitialized()
     {
         if ($this->isAdmin()) {
-            $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/buttontable/admin/js/button.js');
+            if ($this->config->get('plugins.editor-buttons.insert_table')) {
+                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/js/button.js');
+            }
+
         }
     }
 }
