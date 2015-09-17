@@ -9,6 +9,11 @@
             class  : 'grid-chooser'
         },
         processAction: function(editor) {
+            if ($('#grid-chooser').is(':visible')) {
+                $('#grid-chooser').remove();
+                return;
+            }
+
             // Credit: http://jsfiddle.net/tnn3qgvj/8/
             var rows = 5;
             var cols = 5;
