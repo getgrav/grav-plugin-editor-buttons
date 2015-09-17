@@ -29,6 +29,9 @@ class EditorButtonsPlugin extends Plugin
                 $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-table/js/button.js');
                 $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-table/css/button.css');
             }
+            if ($this->config->get('plugins.editor-buttons.insert_video_youtube')) {
+                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-video-youtube/js/button.js');
+            }
 
         }
     }

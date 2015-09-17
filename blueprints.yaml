@@ -45,3 +45,14 @@ form:
             0: Disabled
           validate:
             type: bool
+
+        insert_video_youtube:
+          type: toggle
+          label: Insert YouTube Video Button
+          highlight: 1
+          default: 0
+          options:
+            1: Enabled
+            0: Disabled
+          validate:
+            type: bool
