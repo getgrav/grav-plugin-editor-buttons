@@ -45,3 +45,47 @@ form:
             0: Disabled
           validate:
             type: bool
+
+        insert_notice.info:
+          type: toggle
+          label: Insert Notice Info
+          highlight: 1
+          default: 0
+          options:
+            1: Enabled
+            0: Disabled
+          validate:
+            type: bool
+
+        insert_notice.note:
+          type: toggle
+          label: Insert Notice Note
+          highlight: 1
+          default: 0
+          options:
+            1: Enabled
+            0: Disabled
+          validate:
+            type: bool
+
+        insert_notice.tip:
+          type: toggle
+          label: Insert Notice Tip
+          highlight: 1
+          default: 0
+          options:
+            1: Enabled
+            0: Disabled
+          validate:
+            type: bool
+
+        insert_notice.warning:
+          type: toggle
+          label: Insert Notice Warning
+          highlight: 1
+          default: 0
+          options:
+            1: Enabled
+            0: Disabled
+          validate:
+            type: bool
