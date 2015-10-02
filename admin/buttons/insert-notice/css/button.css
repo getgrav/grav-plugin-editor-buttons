@@ -1,0 +1,12 @@
+.fa-exclamation-circle.notice-info {
+	color: #f0b383;
+}
+.fa-exclamation-circle.notice-warning {
+	color: rgba(217,83,79,.8);
+}
+.fa-exclamation-circle.notice-note {
+	color: #6ab0de;
+}
+.fa-exclamation-circle.notice-tip {
+	color: rgba(92,184,92,.8);
+}
