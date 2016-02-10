@@ -45,6 +45,10 @@ class EditorButtonsPlugin extends Plugin
                 $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/js/tip.js');
                 $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/css/button.css');
             }
+            if ($this->config->get('plugins.editor-buttons.insert_headings')) {
+                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-headings/js/headings.js');
+                $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-headings/css/headings.css');
+            }
         }
     }
 }

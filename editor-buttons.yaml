@@ -5,3 +5,4 @@ insert_notice:
     note: true
     tip: true
     warning: true
+insert_headings: true
