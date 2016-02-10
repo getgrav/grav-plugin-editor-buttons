@@ -89,3 +89,14 @@ form:
             0: Disabled
           validate:
             type: bool
+
+        insert_headings:
+          type: toggle
+          label: Insert Heading Buttons
+          highlight: 1
+          default: 0
+          options:
+            1: Enabled
+            0: Disabled
+          validate:
+            type: bool
