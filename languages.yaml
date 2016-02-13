@@ -1,0 +1,19 @@
+en:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Enable buttons'
+    INSERT_TABLE_BUTTON: 'Insert Table Button'
+    INSERT_NOTICE_INFO: 'Insert Notice Info'
+    INSERT_NOTICE_NOTE: 'Insert Notice Note'
+    INSERT_NOTICE_TIP: 'Insert Notice Tip'
+    INSERT_NOTICE_WARNING: 'Insert Notice Warning'
+    INSERT_HEADING_BUTTONS: 'Insert Heading Buttons'
+
+ru:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Добавить кнопки'
+    INSERT_TABLE_BUTTON: 'Вставить таблицу'
+    INSERT_NOTICE_INFO: 'Вставить уведомление Info'
+    INSERT_NOTICE_NOTE: 'Вставить уведомление Note'
+    INSERT_NOTICE_TIP: 'Вставить уведомление Tip'
+    INSERT_NOTICE_WARNING: 'Вставить уведомление Warning'
+    INSERT_HEADING_BUTTONS: 'Вставить заголовки'

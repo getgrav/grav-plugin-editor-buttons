@@ -19,84 +19,84 @@ form:
   fields:
     enabled:
       type: toggle
-      label: Plugin status
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
       highlight: 1
       default: 0
       options:
-        1: Enabled
-        0: Disabled
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
 
     buttons:
       type: section
-      title: Enable buttons
+      title: PLUGIN_EDITOR_BUTTONS.ENABLE_BUTTONS
       underline: true
 
       fields:
 
         insert_table:
           type: toggle
-          label: Insert Table Button
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_TABLE_BUTTON
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
 
         insert_notice.info:
           type: toggle
-          label: Insert Notice Info
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_INFO
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
 
         insert_notice.note:
           type: toggle
-          label: Insert Notice Note
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_NOTE
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
 
         insert_notice.tip:
           type: toggle
-          label: Insert Notice Tip
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_TIP
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
 
         insert_notice.warning:
           type: toggle
-          label: Insert Notice Warning
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_WARNING
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
 
         insert_headings:
           type: toggle
-          label: Insert Heading Buttons
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_HEADING_BUTTONS
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
