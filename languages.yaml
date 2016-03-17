@@ -2,28 +2,22 @@ en:
   PLUGIN_EDITOR_BUTTONS:
     ENABLE_BUTTONS: 'Enable buttons'
     INSERT_TABLE_BUTTON: 'Insert Table Button'
-    INSERT_NOTICE_INFO: 'Insert Notice Info'
-    INSERT_NOTICE_NOTE: 'Insert Notice Note'
-    INSERT_NOTICE_TIP: 'Insert Notice Tip'
-    INSERT_NOTICE_WARNING: 'Insert Notice Warning'
-    INSERT_HEADING_BUTTONS: 'Insert Heading Buttons'
+    INSERT_NOTICES: 'Insert Notices'
+
+it:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Abilita bottoni'
+    INSERT_TABLE_BUTTON: 'Inserisci Tabella'
+    INSERT_NOTICES: 'Inserisci Notifiche'
 
 ru:
   PLUGIN_EDITOR_BUTTONS:
     ENABLE_BUTTONS: 'Добавить кнопки'
     INSERT_TABLE_BUTTON: 'Вставить таблицу'
-    INSERT_NOTICE_INFO: 'Вставить уведомление Info'
-    INSERT_NOTICE_NOTE: 'Вставить уведомление Note'
-    INSERT_NOTICE_TIP: 'Вставить уведомление Tip'
-    INSERT_NOTICE_WARNING: 'Вставить уведомление Warning'
-    INSERT_HEADING_BUTTONS: 'Вставить заголовки'
+    INSERT_NOTICES: 'Вставить уведомление'
     
 fr:
   PLUGIN_EDITOR_BUTTONS:
     ENABLE_BUTTONS: 'Activer les boutons'
     INSERT_TABLE_BUTTON: 'Insérer un bouton de tableau'
-    INSERT_NOTICE_INFO: 'Insérer une indication d'Information'
-    INSERT_NOTICE_NOTE: 'Insérer une indication de Note'
-    INSERT_NOTICE_TIP: 'Insérer une indication d'Astuce'
-    INSERT_NOTICE_WARNING: 'Insérer une indication d'Avertissement'
-    INSERT_HEADING_BUTTONS: 'Insérer des boutons de titre'
+    INSERT_NOTICES: 'Insérer indications'
