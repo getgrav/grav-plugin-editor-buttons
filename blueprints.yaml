@@ -46,53 +46,9 @@ form:
           validate:
             type: bool
 
-        insert_notice.info:
+        insert_notice:
           type: toggle
-          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_INFO
-          highlight: 1
-          default: 0
-          options:
-            1: PLUGIN_ADMIN.ENABLED
-            0: PLUGIN_ADMIN.DISABLED
-          validate:
-            type: bool
-
-        insert_notice.note:
-          type: toggle
-          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_NOTE
-          highlight: 1
-          default: 0
-          options:
-            1: PLUGIN_ADMIN.ENABLED
-            0: PLUGIN_ADMIN.DISABLED
-          validate:
-            type: bool
-
-        insert_notice.tip:
-          type: toggle
-          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_TIP
-          highlight: 1
-          default: 0
-          options:
-            1: PLUGIN_ADMIN.ENABLED
-            0: PLUGIN_ADMIN.DISABLED
-          validate:
-            type: bool
-
-        insert_notice.warning:
-          type: toggle
-          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICE_WARNING
-          highlight: 1
-          default: 0
-          options:
-            1: PLUGIN_ADMIN.ENABLED
-            0: PLUGIN_ADMIN.DISABLED
-          validate:
-            type: bool
-
-        insert_headings:
-          type: toggle
-          label: PLUGIN_EDITOR_BUTTONS.INSERT_HEADING_BUTTONS
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICES
           highlight: 1
           default: 0
           options:

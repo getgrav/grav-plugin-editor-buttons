@@ -29,25 +29,15 @@ class EditorButtonsPlugin extends Plugin
                 $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-table/js/button.js');
                 $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-table/css/button.css');
             }
-            if ($this->config->get('plugins.editor-buttons.insert_notice.info')) {
-                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/js/info.js');
+
+            $noticesBC = $this->config->get('plugins.editor-buttons.insert_notice.info')
+                || $this->config->get('plugins.editor-buttons.insert_notice.warning')
+                || $this->config->get('plugins.editor-buttons.insert_notice.note')
+                || $this->config->get('plugins.editor-buttons.insert_notice.tip');
+
+            if ($this->config->get('plugins.editor-buttons.insert_notice') || $noticesBC) {
+                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/js/notices.js');
                 $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/css/button.css');
-            }
-            if ($this->config->get('plugins.editor-buttons.insert_notice.warning')) {
-                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/js/warning.js');
-                $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/css/button.css');
-            }
-            if ($this->config->get('plugins.editor-buttons.insert_notice.note')) {
-                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/js/note.js');
-                $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/css/button.css');
-            }
-            if ($this->config->get('plugins.editor-buttons.insert_notice.tip')) {
-                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/js/tip.js');
-                $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/css/button.css');
-            }
-            if ($this->config->get('plugins.editor-buttons.insert_headings')) {
-                $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-headings/js/headings.js');
-                $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-headings/css/headings.css');
             }
         }
     }
