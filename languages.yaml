@@ -17,13 +17,13 @@ ru:
     INSERT_NOTICE_TIP: 'Вставить уведомление Tip'
     INSERT_NOTICE_WARNING: 'Вставить уведомление Warning'
     INSERT_HEADING_BUTTONS: 'Вставить заголовки'
-
+    
 fr:
   PLUGIN_EDITOR_BUTTONS:
     ENABLE_BUTTONS: 'Activer les boutons'
     INSERT_TABLE_BUTTON: 'Insérer un bouton de tableau'
-    INSERT_NOTICE_INFO: "Insérer une indication d'Information"
+    INSERT_NOTICE_INFO: 'Insérer une indication d'Information'
     INSERT_NOTICE_NOTE: 'Insérer une indication de Note'
-    INSERT_NOTICE_TIP: "Insérer une indication d'Astuce"
-    INSERT_NOTICE_WARNING: "Insérer une indication d'Avertissement"
+    INSERT_NOTICE_TIP: 'Insérer une indication d'Astuce'
+    INSERT_NOTICE_WARNING: 'Insérer une indication d'Avertissement'
     INSERT_HEADING_BUTTONS: 'Insérer des boutons de titre'
