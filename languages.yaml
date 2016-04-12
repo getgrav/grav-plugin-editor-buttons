@@ -15,7 +15,7 @@ ru:
     ENABLE_BUTTONS: 'Добавить кнопки'
     INSERT_TABLE_BUTTON: 'Вставить таблицу'
     INSERT_NOTICES: 'Вставить уведомление'
-    
+
 fr:
   PLUGIN_EDITOR_BUTTONS:
     ENABLE_BUTTONS: 'Activer les boutons'
