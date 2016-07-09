@@ -8,7 +8,9 @@
                     title: 'Table',
                     label: '<i class="fa fa-fw fa-table"></i>',
                     modes: ['gfm', 'markdown'],
-                    action: function({ codemirror, button, textarea }) {
+                    action: function(_ref) {
+                        var codemirror = _ref.codemirror, button = _ref.button, textarea = _ref.textarea;
+
                         button.on('click.editor.table', function() {
                             if ($('#grid-chooser').is(':visible')) {
                                 $('#grid-chooser').remove();

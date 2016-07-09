@@ -15,7 +15,9 @@
                                 title: 'Info Notice',
                                 label: '<i class="fa fa-fw fa-exclamation-circle notice-info"></i>',
                                 modes: ['gfm', 'markdown'],
-                                action: function({ codemirror, button }) {
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+
                                     button.on('click.editor.notice-info', function() {
                                         Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>> $1', codemirror: codemirror });
                                         codemirror.focus();
@@ -29,7 +31,9 @@
                                 title: 'Warning Notice',
                                 label: '<i class="fa fa-fw fa-exclamation-circle notice-warning"></i>',
                                 modes: ['gfm', 'markdown'],
-                                action: function({ codemirror, button }) {
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+
                                     button.on('click.editor.notice-warning', function() {
                                         Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>>> $1', codemirror: codemirror });
                                         codemirror.focus();
@@ -43,7 +47,9 @@
                                 title: 'Note Notice',
                                 label: '<i class="fa fa-fw fa-exclamation-circle notice-note"></i>',
                                 modes: ['gfm', 'markdown'],
-                                action: function({ codemirror, button }) {
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+
                                     button.on('click.editor.notice-note', function() {
                                         Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>>>> $1', codemirror: codemirror });
                                         codemirror.focus();
@@ -57,7 +63,9 @@
                                 title: 'Tip Notice',
                                 label: '<i class="fa fa-fw fa-exclamation-circle notice-tip"></i>',
                                 modes: ['gfm', 'markdown'],
-                                action: function({ codemirror, button }) {
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+
                                     button.on('click.editor.notice-tip', function() {
                                         Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>>>>> $1', codemirror: codemirror });
                                         codemirror.focus();
