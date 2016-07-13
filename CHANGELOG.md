@@ -5,6 +5,8 @@
     * Fixed ES6 syntax to ES5 compatibility [#10](https://github.com/getgrav/grav-plugin-editor-buttons/issues/10)
 2. [](#bugfix)
     * Added feature dependency check for markdown-notices [#9](https://github.com/getgrav/grav-plugin-editor-buttons/issues/9)
+3. [](#bugfix)
+    * Changed asset URL to relative URL from absolute URL
 
 # v1.1.0-beta.1
 ## 06/05/2016
