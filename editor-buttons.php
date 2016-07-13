@@ -35,7 +35,7 @@ class EditorButtonsPlugin extends Plugin
                 || $this->config->get('plugins.editor-buttons.insert_notice.note')
                 || $this->config->get('plugins.editor-buttons.insert_notice.tip');
 
-            if ($this->config->get('plugins.editor-buttons.insert_notice') || $noticesBC) {
+            if ($this->config->get('plugins.markdown-notices.enabled') && $this->config->get('plugins.editor-buttons.insert_notice') || $noticesBC) {
                 $this->grav['assets']->addJs($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/js/notices.js');
                 $this->grav['assets']->addCss($this->grav['base_url_absolute'] . '/user/plugins/editor-buttons/admin/buttons/insert-notice/css/button.css');
             }
