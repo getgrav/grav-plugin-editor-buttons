@@ -1,5 +1,5 @@
 name: Editor Buttons
-version: 1.0.0
+version: 1.1.0
 description: Adds additional editor button options
 icon: edit
 author:
@@ -12,80 +12,47 @@ bugs: https://github.com/getgrav/grav-plugin-editor-buttons/issues
 license: MIT
 
 dependencies:
-  - admin
+  - { name: admin, version: '~1.1' }
 
 form:
   validation: loose
   fields:
     enabled:
       type: toggle
-      label: Plugin status
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
       highlight: 1
       default: 0
       options:
-        1: Enabled
-        0: Disabled
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
 
     buttons:
       type: section
-      title: Enable buttons
+      title: PLUGIN_EDITOR_BUTTONS.ENABLE_BUTTONS
       underline: true
 
       fields:
 
         insert_table:
           type: toggle
-          label: Insert Table Button
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_TABLE_BUTTON
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
 
-        insert_notice.info:
+        insert_notice:
           type: toggle
-          label: Insert Notice Info
+          label: PLUGIN_EDITOR_BUTTONS.INSERT_NOTICES
           highlight: 1
           default: 0
           options:
-            1: Enabled
-            0: Disabled
-          validate:
-            type: bool
-
-        insert_notice.note:
-          type: toggle
-          label: Insert Notice Note
-          highlight: 1
-          default: 0
-          options:
-            1: Enabled
-            0: Disabled
-          validate:
-            type: bool
-
-        insert_notice.tip:
-          type: toggle
-          label: Insert Notice Tip
-          highlight: 1
-          default: 0
-          options:
-            1: Enabled
-            0: Disabled
-          validate:
-            type: bool
-
-        insert_notice.warning:
-          type: toggle
-          label: Insert Notice Warning
-          highlight: 1
-          default: 0
-          options:
-            1: Enabled
-            0: Disabled
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool

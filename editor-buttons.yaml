@@ -1,7 +1,3 @@
 enabled: true
 insert_table: true
-insert_notice:
-    info: true
-    note: true
-    tip: true
-    warning: true
+insert_notice: true

@@ -1,0 +1,23 @@
+en:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Enable buttons'
+    INSERT_TABLE_BUTTON: 'Insert Table Button'
+    INSERT_NOTICES: 'Insert Notices'
+
+it:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Abilita bottoni'
+    INSERT_TABLE_BUTTON: 'Inserisci Tabella'
+    INSERT_NOTICES: 'Inserisci Notifiche'
+
+ru:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Добавить кнопки'
+    INSERT_TABLE_BUTTON: 'Вставить таблицу'
+    INSERT_NOTICES: 'Вставить уведомление'
+    
+fr:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Activer les boutons'
+    INSERT_TABLE_BUTTON: 'Insérer un bouton de tableau'
+    INSERT_NOTICES: 'Insérer indications'
