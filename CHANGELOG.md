@@ -1,3 +1,11 @@
+# v1.1.1
+## 07/14/2016
+
+1. [](#bugfix)
+    * Fixed event to load the assets to work properly
+1. [](#improved)
+    * Renamed the css/js files for consistency
+
 # v1.1.0
 ## 07/13/2016
 
