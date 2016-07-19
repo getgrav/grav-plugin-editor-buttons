@@ -4,6 +4,12 @@ en:
     INSERT_TABLE_BUTTON: 'Insert Table Button'
     INSERT_NOTICES: 'Insert Notices'
 
+de:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Aktiviere Buttons'
+    INSERT_TABLE_BUTTON: 'Tabellen Button einfügen'
+    INSERT_NOTICES: 'Notizen einfügen'
+
 it:
   PLUGIN_EDITOR_BUTTONS:
     ENABLE_BUTTONS: 'Abilita bottoni'
