@@ -27,3 +27,8 @@ fr:
     ENABLE_BUTTONS: 'Activer les boutons'
     INSERT_TABLE_BUTTON: 'Insérer un bouton de tableau'
     INSERT_NOTICES: 'Insérer indications'
+ro:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Activați butoanele'
+    INSERT_TABLE_BUTTON: 'Inserați Button'
+    INSERT_NOTICES: 'Inserați Notificări'
