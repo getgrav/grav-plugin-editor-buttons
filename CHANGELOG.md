@@ -1,6 +1,8 @@
 # v1.1.2
 ## 07/xx/2016
 
+1. [](#bugfix)
+    * Old notices markdown syntax (>>>) replaced with new (!) [#16](https://github.com/getgrav/grav-plugin-editor-buttons/pull/16)
 1. [](#improved)
     * Added german and romanian translations
 
