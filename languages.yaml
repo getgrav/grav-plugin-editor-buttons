@@ -4,6 +4,12 @@ en:
     INSERT_TABLE_BUTTON: 'Insert Table Button'
     INSERT_NOTICES: 'Insert Notices'
 
+de:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Aktiviere Buttons'
+    INSERT_TABLE_BUTTON: 'Tabellen Button einfügen'
+    INSERT_NOTICES: 'Notizen einfügen'
+
 it:
   PLUGIN_EDITOR_BUTTONS:
     ENABLE_BUTTONS: 'Abilita bottoni'
@@ -21,3 +27,8 @@ fr:
     ENABLE_BUTTONS: 'Activer les boutons'
     INSERT_TABLE_BUTTON: 'Insérer un bouton de tableau'
     INSERT_NOTICES: 'Insérer indications'
+ro:
+  PLUGIN_EDITOR_BUTTONS:
+    ENABLE_BUTTONS: 'Activați butoanele'
+    INSERT_TABLE_BUTTON: 'Inserați Button'
+    INSERT_NOTICES: 'Inserați Notificări'

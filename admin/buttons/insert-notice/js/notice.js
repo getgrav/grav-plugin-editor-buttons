@@ -19,7 +19,7 @@
                                     var codemirror = _ref.codemirror, button = _ref.button;
 
                                     button.on('click.editor.notice-info', function() {
-                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>> $1', codemirror: codemirror });
+                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '! $1', codemirror: codemirror });
                                         codemirror.focus();
                                     });
                                 }
@@ -35,7 +35,7 @@
                                     var codemirror = _ref.codemirror, button = _ref.button;
 
                                     button.on('click.editor.notice-warning', function() {
-                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>>> $1', codemirror: codemirror });
+                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '!! $1', codemirror: codemirror });
                                         codemirror.focus();
                                     });
                                 }
@@ -51,7 +51,7 @@
                                     var codemirror = _ref.codemirror, button = _ref.button;
 
                                     button.on('click.editor.notice-note', function() {
-                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>>>> $1', codemirror: codemirror });
+                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '!!! $1', codemirror: codemirror });
                                         codemirror.focus();
                                     });
                                 }
@@ -67,7 +67,7 @@
                                     var codemirror = _ref.codemirror, button = _ref.button;
 
                                     button.on('click.editor.notice-tip', function() {
-                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '>>>>>> $1', codemirror: codemirror });
+                                        Instance.buttonStrategies.replaceLine({ token: '$1', template: '!!!! $1', codemirror: codemirror });
                                         codemirror.focus();
                                     });
                                 }
