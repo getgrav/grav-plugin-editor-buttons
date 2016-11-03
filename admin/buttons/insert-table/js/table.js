@@ -9,7 +9,7 @@
                     label: '<i class="fa fa-fw fa-table"></i>',
                     modes: ['gfm', 'markdown'],
                     action: function(_ref) {
-                        var codemirror = _ref.codemirror, button = _ref.button, textarea = _ref.textarea;
+                        var codemirror = _ref.codemirror, button = _ref.button, textarea = _ref.textarea, $allSquares;
 
                         button.on('click.editor.table', function() {
                             if ($('#grid-chooser').is(':visible')) {
@@ -33,61 +33,60 @@
 
                             var $grid = button.append($(grid));
 
+                            $allSquares = $('.square');
 
-                            var $allSquares = $('.square');
+                        });
 
+                        button.on('mouseover', '.square', function () {
+                            var $this = $(this);
+                            var col = $this.index() + 1;
+                            var row = $this.parent().index() + 1;
+                            $allSquares.removeClass('highlight');
+                            $('.row:nth-child(-n+'+row+') .square:nth-child(-n+'+col+')')
+                                .addClass('highlight');
+                        });
 
-                            $grid.on('mouseover', '.square', function () {
-                                var $this = $(this);
-                                var col = $this.index() + 1;
-                                var row = $this.parent().index() + 1;
-                                $allSquares.removeClass('highlight');
-                                $('.row:nth-child(-n+'+row+') .square:nth-child(-n+'+col+')')
-                                    .addClass('highlight');
-                            });
+                        button.on('click', '.square', function () {
+                            var $this = $(this);
+                            var cols = $this.index() + 1;
+                            var rows = $this.parent().index() + 1;
+                            $('#grid-chooser').remove();
 
-                            $grid.on('click', '.square', function () {
-                                var $this = $(this);
-                                var cols = $this.index() + 1;
-                                var rows = $this.parent().index() + 1;
-                                $('#grid-chooser').remove();
+                            //Generate the markdown text to insert
+                            var text = '';
 
-                                //Generate the markdown text to insert
-                                var text = '';
+                            var i = 0;
+                            var j = 0;
 
-                                var i = 0;
-                                var j = 0;
+                            while (i < cols) {
+                                text += '|  Column ' + (i + 1) + ' Title  ';
+                                i++;
+                            }
 
-                                while (i < cols) {
-                                    text += '|  Column ' + (i + 1) + ' Title  ';
-                                    i++;
+                            text +=  '|' + '\n';
+
+                            i = 0;
+                            while (i < cols) {
+                                text += '|  :-----          ';
+                                i++;
+                            }
+
+                            text +=  '|' + '\n';
+
+                            i = 0;
+                            while (i < rows) {
+                                j = 0;
+                                while (j < cols) {
+                                    text += '|  Column ' + (j + 1) + ' Item ' + (i + 1) + ' ';
+                                    j++;
                                 }
+                                i++;
 
                                 text +=  '|' + '\n';
-
-                                i = 0;
-                                while (i < cols) {
-                                    text += '|  :-----          ';
-                                    i++;
-                                }
-
-                                text +=  '|' + '\n';
-
-                                i = 0;
-                                while (i < rows) {
-                                    j = 0;
-                                    while (j < cols) {
-                                        text += '|  Column ' + (j + 1) + ' Item ' + (i + 1) + ' ';
-                                        j++;
-                                    }
-                                    i++;
-
-                                    text +=  '|' + '\n';
-                                }
-                                Instance.buttonStrategies.replaceLine({ token: '$1', template: text, codemirror: codemirror });
-                                button.trigger('click.editor.table');
-                                codemirror.focus();
-                            });
+                            }
+                            Instance.buttonStrategies.replaceLine({ token: '$1', template: text, codemirror: codemirror });
+                            button.trigger('click.editor.table');
+                            codemirror.focus();
                         });
                     }
                 }
