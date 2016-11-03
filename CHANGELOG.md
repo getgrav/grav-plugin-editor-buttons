@@ -1,3 +1,9 @@
+# v1.1.3
+## 11/xx/2016
+
+1. [](#bugfix)
+    * Fixed an issue with the Insert Table button. Prevents the `click` and `mouseover` events from being attached more than once in order to prevent tables from spawning erratically. [#20](https://github.com/getgrav/grav-plugin-editor-buttons/pull/20)
+
 # v1.1.2
 ## 08/09/2016
 
