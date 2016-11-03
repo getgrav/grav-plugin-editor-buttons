@@ -19,6 +19,10 @@ In the Admin Panel, Plugins list, clicking **Editor Buttons** will show you some
 Currently available buttons are
 
 - Insert Table
+- Insert Headings
+
+If the "Markdown Notices" plugin is installed, these will also be available:
+
 - Insert Info Notice
 - Insert Note Notice
 - Insert Tip Notice

@@ -1,3 +1,9 @@
+# v1.1.3
+## 11/03/2016
+
+1. [](#bugfix)
+    * Fixed an issue with the Insert Table button. Prevents the `click` and `mouseover` events from being attached more than once in order to prevent tables from spawning erratically. [#20](https://github.com/getgrav/grav-plugin-editor-buttons/pull/20)
+
 # v1.1.2
 ## 08/09/2016
 
@@ -17,11 +23,11 @@
 # v1.1.0
 ## 07/13/2016
 
+1. [](#improved)
+    * Only shows the notices button if the Markdown Notices plugin is installed
 1. [](#bugfix)
     * Fixed ES6 syntax to ES5 compatibility [#10](https://github.com/getgrav/grav-plugin-editor-buttons/issues/10)
-2. [](#bugfix)
     * Added feature dependency check for markdown-notices [#9](https://github.com/getgrav/grav-plugin-editor-buttons/issues/9)
-3. [](#bugfix)
     * Changed asset URL to relative URL from absolute URL
 
 # v1.1.0-beta.1
