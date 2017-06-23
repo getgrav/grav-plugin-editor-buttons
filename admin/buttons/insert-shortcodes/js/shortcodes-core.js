@@ -6,9 +6,54 @@
                 shortcodes: {
                     identifier: 'shortcodes',
                     title: 'Shortcodes Core',
-                    label: '<i class="fa fa-fw fa-th-large"></i>',
+                    label: '<i class="fa fa-fw fa-th"></i>',
                     modes: ['gfm', 'markdown'],
                     children: [
+                        {
+                            'shortcodes-alignleft': {
+                                identifier: 'shortcodes-alignleft',
+                                title: 'AlignLeft',
+                                label: '<i class="fa fa-fw fa-align-left"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-alignleft', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[left]$1[/left]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
+                        {
+                            'shortcodes-aligncenter': {
+                                identifier: 'shortcodes-aligncenter',
+                                title: 'AlignCenter',
+                                label: '<i class="fa fa-fw fa-align-center"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-aligncenter', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[center]$1[/center]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
+                        {
+                            'shortcodes-alignright': {
+                                identifier: 'shortcodes-alignright',
+                                title: 'AlignRight',
+                                label: '<i class="fa fa-fw fa-align-right"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-alignright', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[right]$1[/right]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
                         {
                             'shortcodes-column': {
                                 identifier: 'shortcodes-column',
