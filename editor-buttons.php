@@ -43,17 +43,10 @@ class EditorButtonsPlugin extends Plugin
               $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-notice/css/notice.css');
             }
 
-            $shortcodesUI = $this->config->get('plugins.editor-buttons.insert_shortcodes.tab')
-                || $this->config->get('plugins.editor-buttons.insert_shortcodes.accordion')
-                || $this->config->get('plugins.editor-buttons.insert_shortcodes.callout')
-                || $this->config->get('plugins.editor-buttons.insert_shortcodes.imagecompare');
-                
-            if ($this->config->get('plugins.shortcode-ui.enabled') && $this->config->get('plugins.editor-buttons.insert_shortcodes') || $shortcodesUI) {
-              $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/js/shortcodes-ui.js');
-              $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/css/shortcodes-ui.css');
-            }
-
-            $shortcodesCORE = $this->config->get('plugins.editor-buttons.insert_shortcodes.column')
+            $shortcodesCORE = $this->config->get('plugins.editor-buttons.insert_shortcodes.alignleft')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.aligncenter')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.alignright')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.column')
                 || $this->config->get('plugins.editor-buttons.insert_shortcodes.safeemail')
                 || $this->config->get('plugins.editor-buttons.insert_shortcodes.notice')
                 || $this->config->get('plugins.editor-buttons.insert_shortcodes.underline')
@@ -62,6 +55,18 @@ class EditorButtonsPlugin extends Plugin
             if ($this->config->get('plugins.shortcode-core.enabled') && $this->config->get('plugins.editor-buttons.insert_shortcodes') || $shortcodesCORE) {
               $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/js/shortcodes-core.js');
               $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/css/shortcodes-core.css');
+            }
+
+            $shortcodesUI = $this->config->get('plugins.editor-buttons.insert_shortcodes.tab')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.accordion')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.callout')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.browser')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.polaroid')
+                || $this->config->get('plugins.editor-buttons.insert_shortcodes.imagecompare');
+
+            if ($this->config->get('plugins.shortcode-ui.enabled') && $this->config->get('plugins.editor-buttons.insert_shortcodes') || $shortcodesUI) {
+              $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/js/shortcodes-ui.js');
+              $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/css/shortcodes-ui.css');
             }
 
         }
