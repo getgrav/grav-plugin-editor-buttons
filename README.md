@@ -28,6 +28,23 @@ If the "Markdown Notices" plugin is installed, these will also be available:
 - Insert Tip Notice
 - Insert Warning Notice
 
+If the "Shortcodes Core" plugin is installed, these will also be available:
+
+- Align Left | Center | Right
+- Insert Column
+- Create Safe Email
+- Insert Notice
+- Insert Underline
+- Insert Size
+
+If the "Shortcodes UI" plugin is installed, these will also be available:
+
+- Insert Tabs
+- Insert Accordion
+- Insert Browser
+- Insert Polaroid
+- Insert Image Compare
+
 # Usage
 
 Open a page, and along the editor default buttons you'll see the newly activated buttons.
