@@ -42,6 +42,17 @@ class EditorButtonsPlugin extends Plugin
               $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-notice/js/notice.js');
               $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-notice/css/notice.css');
             }
+
+            if ($this->config->get('plugins.shortcode-core.enabled') && $this->config->get('plugins.editor-buttons.insert_shortcodes')) {
+              $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/js/shortcodes-core.js');
+              //$this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/css/shortcodes-core.css');
+            }
+
+            if ($this->config->get('plugins.shortcode-ui.enabled') && $this->config->get('plugins.editor-buttons.insert_shortcodes')) {
+              $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/js/shortcodes-ui.js');
+              //$this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/css/shortcodes-ui.css');
+            }
+
         }
     }
 }
