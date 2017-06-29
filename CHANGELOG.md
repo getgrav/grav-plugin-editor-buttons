@@ -1,3 +1,9 @@
+# v1.2.0
+## xx/xx/2017
+
+1. [](#new)
+    * Added Shortcode Core + Shortcode UI Button Dropdown. PR by [@dennemark](https://github.com/dennemark) [#23](https://github.com/getgrav/grav-plugin-editor-buttons/pull/23)
+
 # v1.1.3
 ## 11/03/2016
 
