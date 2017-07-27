@@ -12,7 +12,7 @@
                                     var codemirror = _ref.codemirror, button = _ref.button;
 
                                     button.on('click.editor.code', function() {
-                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '``` \n $1 \n```', codemirror: codemirror });
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '``` \n$1\n```', codemirror: codemirror });
                                         codemirror.focus();
                                     });
                                 }
