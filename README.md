@@ -44,6 +44,7 @@ If the "Shortcodes UI" plugin is installed, these will also be available:
 - Insert Browser
 - Insert Polaroid
 - Insert Image Compare
+- Insert Text Animations - see [reference](https://github.com/getgrav/grav-plugin-shortcode-ui/blob/master/README.md)
 
 # Usage
 
