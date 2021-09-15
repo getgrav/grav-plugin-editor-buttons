@@ -3,9 +3,12 @@
 
 1. [](#new)
     * Added Shortcode UI Text Animations Button
-    * Added Shortcode Core new Shortcodes available 
+    * Added Shortcode Core new Shortcodes available
 1. [](#improved)
         * Added czech translations
+1. [](#bugfix)
+        * Fixed an issue of ending tag for UI-browser shortcode from Shortcode Core. [#27](https://github.com/getgrav/grav-plugin-editor-buttons/issues/27)
+
 # v1.2.1
 ## 06/29/2017
 

@@ -78,7 +78,7 @@
                                 action: function(_ref) {
                                     var codemirror = _ref.codemirror, button = _ref.button;
                                     button.on('click.editor.shortcodes-browser', function() {
-                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[ui-browser address="http://yoururl.org"]$1[/browser]', codemirror: codemirror});
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[ui-browser address="http://yoururl.org"]$1[/ui-browser]', codemirror: codemirror});
                                        codemirror.focus();
                                     });
                                 }
