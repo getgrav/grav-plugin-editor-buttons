@@ -36,6 +36,9 @@ If the "Shortcodes Core" plugin is installed, these will also be available:
 - Insert Notice
 - Insert Underline
 - Insert Size
+- Insert Figure
+- Insert Mark
+- Insert Lorem Ipsum Paragraphs | Sentences | Words
 
 If the "Shortcodes UI" plugin is installed, these will also be available:
 
@@ -44,6 +47,7 @@ If the "Shortcodes UI" plugin is installed, these will also be available:
 - Insert Browser
 - Insert Polaroid
 - Insert Image Compare
+- Insert Text Animations - see [reference](https://github.com/getgrav/grav-plugin-shortcode-ui/blob/master/README.md)
 
 # Usage
 

@@ -115,6 +115,81 @@
                             }
                         },
                         {
+                            'shortcodes-mark': {
+                                identifier: 'shortcodes-mark',
+                                title: 'Mark',
+                                label: '<i class="fa fa-fw fa-thumb-tack"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-mark', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[mark]$1[/mark]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
+                        {
+                            'shortcodes-figure': {
+                                identifier: 'shortcodes-figure',
+                                title: 'Figure',
+                                label: '<i class="fa fa-fw fa-picture-o"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-figure', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[figure id="fig1" class="image" caption="**Fig. 1** A beautiful figure."]![$1](image.png)[/figure]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
+                        {
+                            'shortcodes-lorem-paragraph': {
+                                identifier: 'shortcodes-lorem-paragraph',
+                                title: 'Lorem Ipsum Generator - Paragraphs',
+                                label: '<i class="fa fa-fw fa-paragraph"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-lorem-paragraph', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[lorem=5 /]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
+                        {
+                            'shortcodes-lorem-sentences': {
+                                identifier: 'shortcodes-lorem-sentences',
+                                title: 'Lorem Ipsum Generator - Sentences',
+                                label: '<i class="fa fa-fw fa-bars"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-lorem-sentences', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[lorem s=5 /]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
+                        {
+                            'shortcodes-lorem-words': {
+                                identifier: 'shortcodes-lorem-words',
+                                title: 'Lorem Ipsum Generator - Words',
+                                label: '<i class="fa fa-fw fa-align-justify"></i>',
+                                modes: ['gfm', 'markdown'],
+                                action: function(_ref) {
+                                    var codemirror = _ref.codemirror, button = _ref.button;
+                                    button.on('click.editor.shortcodes-lorem-words', function() {
+                                        Instance.buttonStrategies.replaceSelections({ token: '$1', template: '[lorem w=50 /]', codemirror: codemirror});
+                                       codemirror.focus();
+                                    });
+                                }
+                            }
+                        },
+                        {
                             'shortcodes-size': {
                                 identifier: 'shortcodes-size',
                                 title: 'Text Size',

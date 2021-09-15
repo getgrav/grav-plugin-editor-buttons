@@ -51,6 +51,7 @@ class EditorButtonsPlugin extends Plugin
 
             if ($this->config->get('plugins.shortcode-ui.enabled') && $this->config->get('plugins.editor-buttons.insert_shortcodes')) {
               $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/js/shortcodes-ui.js');
+              $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/js/shortcodes-ui-textanim.js');
               //$this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-shortcodes/css/shortcodes-ui.css');
             }
 
