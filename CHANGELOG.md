@@ -1,3 +1,11 @@
+# v1.2.2
+## 09/15/2021
+
+1. [](#new)
+    * Added Shortcode UI Text Animations Button
+    * Added Shortcode Core new Shortcodes available 
+1. [](#improved)
+        * Added czech translations
 # v1.2.1
 ## 06/29/2017
 
