@@ -1,5 +1,5 @@
 name: Editor Buttons
-version: 1.2.1
+version: 1.2.2
 description: Adds additional editor button options
 icon: edit
 author:
@@ -10,6 +10,9 @@ homepage: https://github.com/getgrav/grav-plugin-editor-buttons
 keywords: admin, plugin, editor, buttons
 bugs: https://github.com/getgrav/grav-plugin-editor-buttons/issues
 license: MIT
+
+compatibility:
+  grav: ['1.7', '2.0']
 
 dependencies:
   - { name: admin, version: '~1.1' }
