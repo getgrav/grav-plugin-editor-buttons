@@ -27,6 +27,7 @@ class EditorButtonsPlugin extends Plugin
         if ($this->isAdmin()) {
             $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-headings/js/headings.js');
             $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-headings/css/headings.css');
+            $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/code-button/js/code.js');
 
             if ($this->config->get('plugins.editor-buttons.insert_table')) {
               $this->grav['assets']->add('plugin://editor-buttons/admin/buttons/insert-table/js/table.js');
