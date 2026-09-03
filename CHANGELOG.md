@@ -2,7 +2,7 @@
 ## 09/03/2026
 
 1. [](#bugfix)
-    * Installing from the command line on Grav 2 no longer fails. The plugin still asked for the Grav 1.7 admin plugin, which does not exist on Grav 2, so `bin/gpm install` stopped on a dependency it could never find. Installing from the Plugins page was unaffected [getgrav/grav-premium-issues#618](https://github.com/getgrav/grav-premium-issues/issues/618)
+    * Installing or updating on Grav 2 no longer fails on a dependency that cannot exist there. The plugin still asked for the Grav 1.7 admin plugin, so `bin/gpm install` stopped with a PHP error, and the Plugins page reported a failed update. On the testing release channel it could go further and install the old admin plugin alongside Admin 2 [getgrav/grav-premium-issues#618](https://github.com/getgrav/grav-premium-issues/issues/618)
 
 # v1.2.2
 ## 05/01/2026
