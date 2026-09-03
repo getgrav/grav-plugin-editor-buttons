@@ -1,5 +1,5 @@
 name: Editor Buttons
-version: 1.2.2
+version: 1.2.3
 description: Adds additional editor button options
 icon: edit
 author:
@@ -15,7 +15,7 @@ compatibility:
   grav: ['1.7', '2.0']
 
 dependencies:
-  - { name: admin, version: '~1.1' }
+  - { name: grav, version: '>=1.7.0' }
 
 form:
   validation: loose
